@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- 开启驼峰自动映射 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!-- 二级缓存的总开关 -->
+		<setting name="cacheEnabled" value="false" />
+	</settings>
+
+	<plugins>
+		<!-- 分页插件：com.github.pagehelper为PageHelper类所在包名 -->
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<!-- 方言 -->
+			<property name="dialect" value="mysql" />
+			<!-- 该参数默认为false -->
+			<!-- 设置为true时，使用RowBounds分页会进行count查询，查询数据总条数 -->
+			<property name="rowBoundsWithCount" value="true" />
+		</plugin>
+		
+		<!-- 通用Mapper插件 -->
+		<plugin interceptor="com.github.abel533.mapperhelper.MapperInterceptor">
+			<!--主键自增回写方法,默认值MYSQL,详细说明请看文档 -->
+			<property name="IDENTITY" value="MYSQL" />
+			<!--通用Mapper接口，多个通用接口用逗号隔开 -->
+			<property name="mappers" value="com.carba.common.mapper.SysMapper" />
+		</plugin>
+	</plugins>
+
+</configuration>

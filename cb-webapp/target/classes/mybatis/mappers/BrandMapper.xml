@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carba.web.mapper.BrandMapper">
+	
+	
+	<resultMap type="Brand" id="brandRM">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<collection property="series" javaType="ArrayList" ofType="Series" column="id" select="querySeriesList">
+		
+		</collection>
+	</resultMap>
+	<select id="queryAll" resultMap="brandRM">
+		select * from brand where id=#{id}
+	</select>
+	<select id="querySeriesList" resultType="Series">
+		select * from series where series_brand_id=#{id}
+	</select>
+	
+	
+	<select id="queryBrand" resultType="Brand">
+		select * from brand
+	</select>
+
+</mapper>

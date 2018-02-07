@@ -1,0 +1,78 @@
+/*车辆信息box*/
+.car-info{
+    width: 1100px;
+	height: 260px;
+	margin: 0 auto;
+	border: 1px solid #ffffef;
+	position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*车辆图片*/
+.car-img img{
+	width: 380px;
+	height: 260px;
+}
+/*车辆信息*/
+.info-r{
+	position: absolute;
+	left: 380px;
+	top: 0px;
+	width: 720px;
+	height: 260px;
+}
+.info-r ul{
+	font-size: 24px;
+	font-weight: bold;
+}
+.info-r ul li{
+	position: relative;
+    list-style: none;
+	margin-left: 30px;
+	padding-top: 20px;
+}
+.info-3 span{
+	position: absolute;
+	display: block;
+	width: 575px;
+	height: 140px;
+	top: 0px;
+	left: 87px;
+	padding-top: 20px;
+}
+.info-span{
+	font-family:  Arial, Geneva,Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 19px;
+	color: #121212;
+	line-height: 32px;
+}
+.show-car{
+	width: 1100px;
+	min-height: 40px;
+	margin: 0 auto;
+}
+.show-car span{
+	display: block;
+	font-size: 24px;
+	line-height: 40px;
+	font-family:  Arial, Geneva,Helvetica, sans-serif;
+	font-weight: bold;
+	border-bottom: 2px solid #efe4e4; 
+}
+.car-name{
+	color: #A11128;
+	width: 1100px;
+	height: 30px;
+	font-size: 18px;
+	text-indent: 3em;
+	line-height: 30px;
+	border-bottom: 1px solid #efefef;
+}
+#fenxi{
+    position: absolute;
+    right: 120px;
+    top: 70px;
+    width: 280px;
+    height: 250px;
+}

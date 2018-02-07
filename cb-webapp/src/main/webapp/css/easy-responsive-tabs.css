@@ -1,0 +1,101 @@
+﻿.product_desc{
+	clear:both;
+	margin-top:30px;
+}
+.resp-tabs-list li {
+	font-size: 1.2em;
+	color: #777;
+	font-weight: 400;
+	font-family: 'Anaheim', sans-serif;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 13px 15px;
+	margin: 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	margin-right:5px;
+	border-top: 1px solid #555555;
+	background: #585858;
+	background: -moz-linear-gradient(top, #585858 0%, #313131 1%, #2d2d2d 20%, #232323 70%, #1f1f1f 99%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#585858), color-stop(1%,#313131), color-stop(20%,#2d2d2d), color-stop(70%,#232323), color-stop(99%,#1f1f1f));
+	background: -webkit-linear-gradient(top, #585858 0%,#313131 1%,#2d2d2d 20%,#232323 70%,#1f1f1f 99%);
+	background: -o-linear-gradient(top, #585858 0%,#313131 1%,#2d2d2d 20%,#232323 70%,#1f1f1f 99%);
+	background: -ms-linear-gradient(top, #585858 0%,#313131 1%,#2d2d2d 20%,#232323 70%,#1f1f1f 99%);
+	background: linear-gradient(to bottom, #585858 0%,#313131 1%,#2d2d2d 20%,#232323 70%,#1f1f1f 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#1f1f1f',GradientType=0 );
+}
+.resp-tabs-list li:hover {
+	color: #FF3760;
+}
+.resp-tabs-container {
+	padding: 0px;
+	background-color:#201E1E;
+	clear: left;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+	padding: 15px;
+}
+.resp-tab-active {
+	border-bottom: none;
+	margin-bottom: -1px !important;
+	padding: 12px 14px 14px 14px !important;
+}
+.resp-tab-active {
+	border-bottom: none;
+	background-color: #fff;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+.resp-tab-content {
+	border: 1px solid #252424;
+}
+h2.resp-accordion {
+	font-size:1em;
+	border: 1px solid #c1c1c1;
+	border-top: 0px solid #c1c1c1;
+	margin: 0px;
+	padding: 10px 15px;
+	background:#E0E0E0;
+	margin:10px 0;
+}
+h2.resp-accordion:hover{
+	color: #E4292F;
+}
+h2.resp-tab-active {
+	border-bottom: 0px solid #c1c1c1 !important;
+	margin-bottom: 0px !important;
+	padding: 10px 15px !important;
+}
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+ul.resp-tabs-list {
+  	display: none;
+}
+h2.resp-accordion {
+  	display: block;
+}
+.resp-vtabs .resp-tab-content {
+  	border: 1px solid #C1C1C1;
+}
+.resp-vtabs .resp-tabs-container {
+	border: none;
+	float: none;
+	width: 100%;
+	min-height: initial;
+	clear: none;
+}
+.resp-accordion-closed {
+	display: none !important;
+}
+.resp-vtabs .resp-tab-content:last-child {
+	border-bottom: 1px solid #c1c1c1 !important;
+}
+}
